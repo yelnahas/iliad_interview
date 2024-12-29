@@ -72,7 +72,7 @@ Below is a list of available endpoints with their functionalities:
 2. **PUT /api/orders**
    - Update a specific order.
 
-3. **POST /api/order**
+3. **POST /api/orders**
    - Create a new order.
 
 4. **DELETE /api/orders/{id}**
