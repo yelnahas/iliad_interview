@@ -41,7 +41,7 @@ To test the APIs effectively, you need to generate some fake data.
    php artisan db:seed ProductSeeder
    ```
 
-2. Generate 10 fake orders:
+2. Generate 10 fake orders (it's not necessary, just if you need it):
    ```bash
    php artisan db:seed OrderSeeder
    ```
