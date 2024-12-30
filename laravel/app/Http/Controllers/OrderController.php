@@ -167,7 +167,7 @@ class OrderController extends Controller
             return $this->apiResponse->success($order, "Order viewed successfully.");
         }
         catch (\Exception $e) {
-            return $this->apiResponse->error($e->getMessage(), []);
+            return $this->apiResponse->error($e->getMessage(), [], $e->getCode() === 0 ? 400 : $e->getCode());
         }
     }
 
@@ -316,7 +316,7 @@ class OrderController extends Controller
             return $this->apiResponse->success($order, "Order created successfully.", 201);
         }
         catch (\Exception $e) {
-            return $this->apiResponse->error($e->getMessage(), [], 400);
+            return $this->apiResponse->error($e->getMessage(), [], $e->getCode() === 0 ? 400 : $e->getCode());
         }
      
     }
@@ -457,7 +457,7 @@ class OrderController extends Controller
             return $this->apiResponse->success($order, "Order updated successfully.");
         }
         catch (\Exception $e) {
-            return $this->apiResponse->error($e->getMessage(), []);
+            return $this->apiResponse->error($e->getMessage(), [], $e->getCode() === 0 ? 400 : $e->getCode());
         }
     
     }
@@ -544,7 +544,7 @@ class OrderController extends Controller
             return $this->apiResponse->success([], "Order deleted successfully.");
         }
         catch (\Exception $e) {
-            return $this->apiResponse->error($e->getMessage(), [], $e->getCode());
+            return $this->apiResponse->error($e->getMessage(), [], $e->getCode() === 0 ? 400 : $e->getCode());
         }
     }
 }

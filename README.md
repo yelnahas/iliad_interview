@@ -53,7 +53,7 @@ To test the APIs effectively, you need to generate some fake data.
 The API documentation is available via Swagger.
 
 1. Open your browser and navigate to:
-   [http://localhost:8080/api/documentation](http://localhost:8080/api/documentation)
+   [http://localhost:8080/api/documentation](http://localhost:8080/api/documentation#/Orders)
 
 2. Generate the JWT secret key (if not already done):
    ```bash
