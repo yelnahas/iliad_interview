@@ -25,6 +25,8 @@ Ensure you have the following installed:
    php artisan jwt:secret --force
    ```
 
+4. Copy the Algolia key from the received email into the .env file under the "ALGOLIA_SECRET" entry.
+
 ## Running Tests
 
 To execute the feature tests:
