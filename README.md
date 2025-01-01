@@ -25,7 +25,7 @@ Ensure you have the following installed:
    php artisan jwt:secret --force
    ```
 
-4. Copy the Algolia key from the received email into the .env file under the "ALGOLIA_SECRET" entry.
+4. Copy the Algolia key from the received email into the .env file (inside laravel folder) under the "ALGOLIA_SECRET" entry.
 
 ## Running Tests
 
